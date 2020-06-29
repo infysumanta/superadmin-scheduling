@@ -1,0 +1,32 @@
+{
+  "name": "sumantablog/superadmin-scheduling",
+  "description": "Task scheduling extension for laravel-superadmin",
+  "type": "library",
+  "keywords": ["laravel-admin", "task", "Scheduling"],
+  "homepage": "https://github.com/sumantablog/superadmin-scheduling",
+  "license": "MIT",
+  "authors": [{
+    "name": "Sumanta Kabiraj",
+    "email": "sumantablog@gmail.com"
+  }],
+  "require": {
+    "php": ">=7.0.0",
+    "sumantablog/laravel-superadmin": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sumantablog\\Admin\\Scheduling\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Sumantablog\\Admin\\Scheduling\\SchedulingServiceProvider"
+      ]
+
+    }
+  }
+}
